@@ -35,6 +35,9 @@ You can test if your javascript files are working by running node filename.js
 ###### CONCLUSION.
 Once done with the tasks to satisfaction you are expected to submit the repository link to the canvas for grading.
 #### RESOURCES
+Canvas learning Materials
+Browsers
+
 
 #### CONTACT DETAILS.
 You can contact me via Email at charitywanjiku422@gmail.com
