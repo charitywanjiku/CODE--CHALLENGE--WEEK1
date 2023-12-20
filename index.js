@@ -1,32 +1,6 @@
-const PromptSync = require("prompt-sync");
-
-
-/*const prompt=require(PromptSync)();
-function carSpeed(){
-    var speed=parseFloat(prompt("Enter the car speed:"));
-    const speedLimit=70;
-    if (speed>=speedLimit){
-        let demeritPoints=Math.floor((speed-speedLimit)/5);
-        console.log(`Points+${demeritPoints}`);//
-
-    }
-}
-  carSpeed();*/
-  /*let prompt=require(PromptSync)();
-  let speed = parseInt(prompt("Enter the speed of the car:"));
-
-if (speed >= 70) {
-  let demeritPoints = Math.floor((speed - 70) / 5);
-  if (demeritPoints > 12) {
-    console.log("License suspended");
-  } else {
-    console.log(`Points: ${demeritPoints}`);
-  }
-} else {
-  console.log("Ok");*/
-
-
-let prompt = require ('prompt-sync')()
+//a  function that detects a car speed
+    
+/*const prompt = require ('prompt-sync')()
 let demeritPoints;
 function carSpeed(){
     //Prompts the user to enter the car speed
@@ -40,7 +14,6 @@ function carSpeed(){
     }else{//Declares variable named demerit points
         let = demeritPoints = Math.floor((speed-speedLimit)/5);
         console.log(`Your :${demeritPoints}`);
-    
     
      }
     };
@@ -57,4 +30,38 @@ function carSpeed(){
         //calling the function
         carSpeed();
         
-        licenseSuspension()
+        // licenseSuspension();*/
+
+        const prompt = require('prompt-sync')();
+
+function carSpeed() {
+    // Prompts the user to enter the car speed
+    var speed = parseFloat(prompt("Enter the car speed:"));
+    // Declares the speed limit
+    let speedLimit = 70;
+    // If driver's speed is less than the speedLimit
+    if (speed < speedLimit) {
+        console.log("OK");
+    } else {
+        // Declares variable named demerit points
+        let demeritPoints = Math.floor((speed - speedLimit) / 5);
+        console.log(`Your demerit points: ${demeritPoints}`);
+        // Calling the licenseSuspension function with demeritPoints as an argument
+        console.log(licenseSuspension(demeritPoints));
+    }
+}
+
+// If the user has more than 12 demerit points, the license is suspended
+function licenseSuspension(demeritPoints) {
+    if (demeritPoints > 12) {
+        // Returns License suspended
+        return "License Suspended";
+    } else {
+        return "License Not suspended";
+    }
+}
+
+// Calling the carSpeed function
+carSpeed();
+licenseSuspension();
+
