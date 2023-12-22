@@ -1,0 +1,22 @@
+{
+  "name": "code--challenge--week1",
+  "version": "1.0.0",
+  "description": "To create a student grades generator. To build a speed detector. To create a net salary calculator. ### INSTRUCTIONS #### STEP1; Open the terminal. Navigate all through to the desired location using cd~ Create the folder using mkdir week1-code Verify the folder name using ls #### DESCRIPTION This repository contains phase-1,week-1 code challenges.You are required to write down solutions using javascript thus practicing javascript.Afterwards you create separate javascript files for each of the named challenges above.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charitywanjiku/CODE--CHALLENGE--WEEK1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charitywanjiku/CODE--CHALLENGE--WEEK1/issues"
+  },
+  "homepage": "https://github.com/charitywanjiku/CODE--CHALLENGE--WEEK1#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
