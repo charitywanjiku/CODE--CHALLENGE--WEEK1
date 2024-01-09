@@ -51,3 +51,4 @@ function calculateNetSalary() {
 
 // Calls the main function
 calculateNetSalary();
+
